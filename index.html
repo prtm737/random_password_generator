@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="conatiner mx-auto h-screen bg-slate-900 flex justify-center items-center"
+    >
+      <div
+        class="h-auto w-auto bg-slate-800 rounded-lg shadow-2xl px-3 flex-row"
+      >
+        <h1 class="font-bold text-6xl text-green-400 mr-72 ml-4 pt-6">
+          <span class="text-white">Generate a</span> <br />
+          random password
+        </h1>
+        <h3 class="font-semibold text-3xl text-sky-400 m-4">
+          Never use a insecure password again
+        </h3>
+
+        <button
+          onclick="showMe()"
+          id="generateBtn"
+          type="button"
+          class="focus:outline-none outline-0 text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-semibold rounded-lg text-xl px-5 py-2.5 mr-2 mb-4 mx-4 mt-14 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+        >
+          GENERATE PASSWORDS
+        </button>
+        <hr class="mt-5" />
+        <div class="flex mt-5 mb-5">
+          <p
+            id="showEl1"
+            class="mb-10 mx-5 mt-10 px-24 py-4 text-white text-xl font-semibold bg-slate-700 rounded-lg shadow-2xl"
+          ></p>
+          <p
+            id="showEl2"
+            class="mb-10 mx-5 mt-10 px-24 py-4 text-white text-xl font-semibold bg-slate-700 rounded-lg shadow-2xl"
+          ></p>
+
+          <p
+            id="showEl4"
+            class="mb-10 mx-5 mt-10 px-14 py-4 text-white text-xl font-semibold bg-slate-700 rounded-lg shadow-2xl"
+          ></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
